@@ -55,7 +55,8 @@ h1, h2 {
 }
 
 h1 {
-	color: #0143A5;
+	/* color: #0143A5; */
+	color: red;
 	font-weight: 700;
 	font-size: 64px;
 	line-height: 133.3%;
