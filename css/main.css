@@ -26,60 +26,120 @@ header, main, footer {
 
 header {
 	display: flex;
-	font-weight: 700;
+	min-height: 9vh;
 	border-bottom: 2px solid orange;
+
+	column-gap: 4vw;
+	align-items: flex-end;
+	justify-content: center;
 }
 
 header a {
-	margin: 10px;
+	font-weight: 700;
+	font-size: 24px;
 	color: #177897;
+	padding-bottom: 15px;
 }
 
-a:active {
+header a.current {
+	text-decoration: underline;
+}
+
+header a:active {
 	color: rgb(5, 20, 158);
+}
+
+.header-label {
+	position: absolute;
+	left: 1.3vw;
+	top: 4.3vh;
 }
 
 
 
 main {
 	flex-direction: column;
-	max-width: 34vw;
+
 	row-gap: 22px;
-	margin-top: 86px;
+	margin-top: 60px;
 	margin-left: 33px;
 	flex: 1;
 }
 
-h1, h2 {
-	font-family: 'Playfair Display', serif;
-}
-
-h1 {
-	/* color: #0143A5; */
-	color: purple;
-	font-weight: 700;
-	font-size: 64px;
-	line-height: 133.3%;
-}
-
-h2 {
-	color: #1554B2;
-	font-weight: 500;
-	font-size: 40px;
-	line-height: 133.3%;
-}
-
-p {
+main > p {
+	max-width: 34vw;
 	color: #3D7CDB;
 	font-size: 32px;
 	line-height: 133.3%;
 
 }
 
+main  h1, main h2 {
+	font-family: 'Playfair Display', serif;
+}
+
+main h1 {
+	color: #0143A5;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 133.3%;
+}
+
+main h2 {
+	color: #1554B2;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 133.3%;
+}
+
+.image-people{
+	position: absolute;
+	top: 5.5vh;
+	left: 42vw;
+}
+
+.rounded-button, .empty-button {
+	margin-top: 30px;
+	height: 61px;
+	border-radius: 26px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 61px;
+	font-size: 24px;
+	margin-right: 53px;
+}
+
+.rounded-button:active, .empty-button:active {
+	color: #000;
+}
+
+.rounded-button {
+	width: 228px;
+	background-color: rgb(1,67,165);
+	background: linear-gradient(90deg, rgba(1,67,165,1) 1%, rgba(1,135,165,1) 100%);
+	color: #FFF;
+}
+
+.empty-button {
+	border-width: 5px;
+	line-height: calc(61px - 5px);
+	border-style: solid;
+	border-color: rgba(1,67,165,1);
+	width: 262px;
+	color: #1554B2;
+}
+
 
 
 footer {
-
+	height: 50px;
+	margin-left: 70px;
+	column-gap: 1.5vw;
+	align-items: center;
+	justify-content: center;
+}
+footer > a > img {
+	height: 20px;
 }
 
 .rectangle {
@@ -89,6 +149,3 @@ footer {
 	background-color: rgb(1,67,165);
 	background: linear-gradient(90deg, rgba(1,67,165,1) 39%, rgba(134,222,240,1) 100%)
 }
-
-/* font-family: 'DM Sans', sans-serif;
-font-family: 'Playfair Display', serif; */
