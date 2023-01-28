@@ -46,7 +46,7 @@ header a.current {
 }
 
 header a:active {
-	color: rgb(5, 20, 158);
+	color: #000;
 }
 
 .header-label {
@@ -94,6 +94,7 @@ main h2 {
 
 .image-people{
 	position: absolute;
+	pointer-events: none;
 	top: 5.5vh;
 	left: 42vw;
 }
