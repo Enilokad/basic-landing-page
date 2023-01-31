@@ -1,1 +1,1 @@
-Basic landing page mockup. Link: https://enilokad.github.io/basic-landing-page/
+Basic landing page mockup. Non-responsive design. Link: https://enilokad.github.io/basic-landing-page/
